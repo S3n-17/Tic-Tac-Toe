@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TIC TAC TOE GAME</h1>
+    <div id="q">
+        <form>
+            <label id="q1">What will you play with?</label><br>
+            <input type="radio" name="symbol" id="x" value="X">
+            <label for="x">X (Player 1)</label>
+            <input type="radio" name="symbol" id="o" value="O">
+            <label for="o">O (Player 2)</label>
+        </form>
+        <br>
+    </div>
+    <div id="game">
+        <div class="subbox">
+            <button id="_1" class="box"></button>
+            <button id="_2" class="box"></button>
+            <button id="_3" class="box"></button>
+        </div>
+        <br>
+        <div class="subbox">
+            <button id="_4" class="box"></button>
+            <button id="_5" class="box"></button>
+            <button id="_6" class="box"></button>
+        </div>
+        <br>
+        <div class="subbox">
+            <button id="_7" class="box"></button>
+            <button id="_8" class="box"></button>
+            <button id="_9" class="box"></button>
+        </div>
+    </div>
+    <br>
+    <div id="winner"></div><br>
+    <div id="but">
+        <button id="reset">Reset Game</button>
+        <button id="new">New Game</button>
+    </div>
+    <script src="jvs.js"></script>
+</body>
+</html>

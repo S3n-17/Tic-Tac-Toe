@@ -1,0 +1,62 @@
+body{
+    text-align: center;
+    background-color: rgb(3, 32, 55);
+    color: white;
+}
+.box{
+    width: 80px;
+    height: 80px;
+    border: 2px rgb(117, 163, 236) solid;
+    border-radius: 15px;
+    display:flex;
+    background-color: bisque;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+form{
+    font-size: 20px;
+}
+#winner{
+    display: inline-block;
+    font-size: 20px;
+    color: rgb(252, 232, 232);
+    height: 60px;
+    width:250px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    visibility: hidden;
+    padding-top: 5px;
+    
+}
+#reset{
+    height: 50px;
+    width:150px;
+    color: black;
+    background-color: bisque;
+    border: 3px rgb(117, 163, 236) solid;
+    border-radius: 5px;
+}
+#new{
+    height: 50px;
+    width:150px;
+    color: black;
+    background-color: bisque;
+    border: 3px rgb(117, 163, 236) solid;
+    border-radius: 5px; 
+}
+#but{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:80px;
+    width: auto;
+}
