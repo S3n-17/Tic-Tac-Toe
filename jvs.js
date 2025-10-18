@@ -29,12 +29,12 @@ function playerslc(){
                 boxes.forEach(box => box.disabled = false);
                 player = "1";
                 console.log("you p1")
-                alert("You are Player 1 and will start the game");
+                alert("You are Player 1");
             } else if(sym === "O") {
                 boxes.forEach(box => box.disabled = false);
                 player = "2";
                 console.log("you p2")
-                alert("You are Player 2. Player 1 will start the game");
+                alert("You are Player 2");
             }
         })
     })
