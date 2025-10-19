@@ -1,5 +1,6 @@
 let boxes=document.querySelectorAll(".box")
 let player="none"
+let con;
 let winner=document.querySelector("#winner")
 let box1=document.querySelector("#_1")
 let box2=document.querySelector("#_2")
@@ -60,6 +61,7 @@ boxes.forEach((box) =>{
                     winner.innerText=`Player ${player} WINS!!! CONGRATULATIONS!!`
                     winner.style.visibility = "visible";
                     boxes.forEach((b)=> b.disabled = true)
+                    
                 }
             }
             )
@@ -77,20 +79,36 @@ boxes.forEach((box) =>{
                     winner.innerText=`Player ${player} WINS!!! CONGRATULATIONS!!`
                     winner.style.visibility = "visible";
                     boxes.forEach((b)=> b.disabled = true)
+                    
                 }
                 
             }
             )   
             player="1"
         }
+        for(let b of boxes){
+            if(b.innerText!=""){
+                con=true
+            }else{
+                con=false
+                break;
+            }}
+        if (con===true && winner.innerText===""){
+            winner.innerText="Draw"
+            winner.style.visibility = "visible";
+        }
         
-        box.disabled = true;
+        
         
         
         }
     )
+
 }
 )
+
+
+
 let rst=document.querySelector("#reset")
 rst.addEventListener("click", () =>{
     l1.forEach((j)=>{
