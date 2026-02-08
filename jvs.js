@@ -52,6 +52,7 @@ boxes.forEach((box) =>{
             
             
             box.innerText="X"
+            box.disabled = true
             console.log("p1")
             l1.push(box.id)
             win.forEach((x) =>{
@@ -70,6 +71,7 @@ boxes.forEach((box) =>{
         }else if(player=="2"){
             
             box.innerText="O"
+            box.disabled = true
             console.log("p2")
             l2.push(box.id)
             win.forEach((x) =>{
@@ -111,12 +113,8 @@ boxes.forEach((box) =>{
 
 let rst=document.querySelector("#reset")
 rst.addEventListener("click", () =>{
-    l1.forEach((j)=>{
-        l1.pop(j)
-    })
-    l2.forEach((k)=>{
-        l2.pop(k)
-    })
+    l1=[]
+    l2=[]
     boxes.forEach((b)=> {b.innerText = ""})
     boxes.forEach((b)=> b.disabled = false)
     
@@ -128,12 +126,8 @@ rst.addEventListener("click", () =>{
 })
 let nw=document.querySelector("#new")
 nw.addEventListener("click", () =>{
-    l1.forEach((j)=>{
-        l1.pop(j)
-    })
-    l2.forEach((k)=>{
-        l2.pop(k)
-    })
+    l1=[]
+    l2=[]
     boxes.forEach((b)=> {b.innerText = ""})
     ip.forEach(inp => inp.checked = false);
     chk=null
