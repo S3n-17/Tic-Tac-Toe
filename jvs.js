@@ -29,17 +29,18 @@ function playerslc(){
             if (sym === "X") {
                 boxes.forEach(box => box.disabled = false);
                 player = "1";
-                console.log("you p1")
+                console.log("You are Player 1")
                 alert("You are Player 1");
             } else if(sym === "O") {
                 boxes.forEach(box => box.disabled = false);
                 player = "2";
-                console.log("you p2")
+                console.log("You are Player 2")
                 alert("You are Player 2");
             }
         })
     })
 }
+
 playerslc()
     
 
@@ -99,17 +100,11 @@ boxes.forEach((box) =>{
             winner.innerText="Draw"
             winner.style.visibility = "visible";
         }
-        
-        
-        
-        
         }
     )
 
 }
 )
-
-
 
 let rst=document.querySelector("#reset")
 rst.addEventListener("click", () =>{
