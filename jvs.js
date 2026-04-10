@@ -130,6 +130,7 @@ nw.addEventListener("click", () =>{
     player="none"
     winner.innerText=""
     winner.style.visibility = "hidden";
+    alert("Please select X or O first");
     
     
 })
