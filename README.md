@@ -1,6 +1,6 @@
 # Tic-Tac-Toe
 
-https://tic-tac-bc6ada6te-senjuti-pauls-projects.vercel.app/
+https://tic-tac-toe-seven-gold-74.vercel.app/
 
 A very simple game of Tic Tac Toe made with HTML, CSS and JAVASCRIPT.
 
